@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #000;
+    }
+    .spiner{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 25px solid white;
+        border-top: 25px solid dodgerblue;
+        animation: tela 2.5s linear infinite;
+    }
+    @keyframes tela{
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="spiner"></div>
+</body>
+</html>
